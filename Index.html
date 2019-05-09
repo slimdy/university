@@ -1,91 +1,188 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>南京林业大学</title>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/banner.css">
     <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/nav.js" type="text/javascript"></script>
     <script src="js/Index.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="headCenter" id="headCenter">
-        <div class="headMenu" id="headMenu">
-            <!--<div class="headMenuTelLogo">-->
-            <!--</div>-->
-            <!--<div class="headMenuTelCenter">-->
-                <!--<div class="headMenu01" id="headMenu01">-->
-                    <!--中心服务热线-->
-                <!--</div>-->
-                <!--<div class="headMenu02" id="headMenu02">-->
-                    <!--0258-5427130-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
+        <div class="headMenu" id="headMenu"></div>
         <div class="index_top_out">
             <div class="index_top">
                 <div class="index_nav">
-                    <ul>
-                        <li class="cur"><a href="#">首页</a> </li>
-                        <li><a href="#">中心概括</a> </li>
-                        <li><a href="#">指挥校园</a> </li>
-                        <li><a href="#">网络管理</a> </li>
-                        <li><a href="#">校园一卡通</a> </li>
-                        <li><a href="#">法规制定</a> </li>
-                        <li><a href="#">等保工作</a> </li>
-                        <li><a href="#">正版软件中心</a></li>
+                    <ul id="nav_ul">
+                        <li class="cur">
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">申报书</a>
+                        </li>
+                        <li>
+                            <a href="#">团队简介</a>
+                        </li>
+                        <li>
+                            <a href="#">团队组成</a>
+                            <ul class="nav_w1" style="display: none;">
+                                <li >
+                                    <a href="#">团队负责人</a>
+                                </li>
+                                <li>
+                                    <a href="#">团队成员</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">教学展示</a>
+                            <ul class="nav_w1" style="display: none;">
+                                <li >
+                                    <a href="#">教学情况</a>
+                                </li>
+                                <li>
+                                    <a href="#">培养方案</a>
+                                </li>
+                                <li>
+                                    <a href="#">教改论文</a>
+                                </li>
+                                <li>
+                                    <a href="#">教改课题</a>
+                                </li>
+                                <li>
+                                    <a href="#">教材建设</a>
+                                </li>
+                                <li>
+                                    <a href="#">教学奖励</a>
+                                </li>
+                                <li>
+                                    <a href="#">图片展示</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">教学特色</a>
+                        </li>
+                        <li>
+                            <a href="#">科研展示</a>
+                            <ul class="nav_w1" style="display: none;">
+                                <li >
+                                    <a href="#">科研论文</a>
+                                </li>
+                                <li>
+                                    <a href="#">课题专著</a>
+                                </li>
+                                <li>
+                                    <a href="#">图片展示</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">建设规划</a>
+                        </li>
+                        <li>
+                            <a href="#">获奖展示</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main-center">
-        <div class="g-login-mid-outer">
-            <div id="side">
-                <ul class="m">
-                    <li style="background-image: url(Images/banner01.png);"><a href="javascript:void(0)">
-                    </a></li>
-                    <li style="background-image: url(Images/banner02.png);"><a href="javascript:void(0)">
-                    </a></li>
-                    <li style="background-image: url(Images/banner03.png)"><a href="javascript:void(0)">
-                    </a></li>
-                    <li style="background-image: url(Images/banner04.png)"><a href="javascript:void(0)">
-                    </a></li>
-                </ul>
-                <ul class="s">
-                    <li class="cur">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
-                    <li class="">4</li>
-                </ul>
+    <section class="pc-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/top_hero_conc_2017.jpg" ></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/top_hero_cs_2017.jpg" ></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/top_hero_cw_im17.jpg" ></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/top_hero_hakko.jpg" ></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/top_hero_karadacalpis_im02.jpg" ></a></div>
             </div>
+
         </div>
-    </div>
+        <div class="swiper-pagination"></div>
+        <div class="button">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div></div>
+    </section>
+    <!--<div class="main-center">-->
+        <!--<div class="g-login-mid-outer">-->
+            <!--<div id="side">-->
+                <!--<ul class="m">-->
+                    <!--<li style="background-image: url(Images/banner01.png);"><a href="javascript:void(0)">-->
+                    <!--</a></li>-->
+                    <!--<li style="background-image: url(Images/banner02.png);"><a href="javascript:void(0)">-->
+                    <!--</a></li>-->
+                    <!--<li style="background-image: url(Images/banner03.png)"><a href="javascript:void(0)">-->
+                    <!--</a></li>-->
+                    <!--<li style="background-image: url(Images/banner04.png)"><a href="javascript:void(0)">-->
+                    <!--</a></li>-->
+                <!--</ul>-->
+                <!--<ul class="s">-->
+                    <!--<li class="cur">1</li>-->
+                    <!--<li class="">2</li>-->
+                    <!--<li class="">3</li>-->
+                    <!--<li class="">4</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="foot">
         <div class="foot_main">
-            <p>
-                <a href="#">联系我们</a><span>|</span> <a href="#">法律声明</a><span>|</span> <a href="#">后台管理</a><span>|</span>
-                <a href="#">旧版网站</a>
-            </p>
-            <p>
-                <label>
-                    版权所有：南京林业大学信息中心
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>
-                    联系电话：025-85427130
-                </label>
-            </p>
-            <p>
-                <label>
-                    地址：南京市龙蟠路159号
-                </label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>
-                    苏ICP备-010872
-                </label>
-            </p>
+            <div class="foot_content">
+                <p>
+                    <a href="#">联系我们</a><span>|</span> <a href="#">法律声明</a><span>|</span> <a href="#">后台管理</a><span>|</span>
+                    <a href="#">旧版网站</a>
+                </p>
+                <p>
+                    <label>
+                        版权所有：xxx大学
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>
+                        联系电话：010-12345678
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        地址：兰州市五泉山山尖尖
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>
+                        刘ICP备-010872
+                    </label>
+                </p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+<script src="js/swiper.min.js"></script>
+
+<script>
+    window.onload = function() {
+        var swiper = new Swiper('.swiper-container',{
+            autoplay:3000,
+            speed:1000,
+            autoplayDisableOnInteraction : false,
+            loop:true,
+            centeredSlides : true,
+            slidesPerView:2,
+            pagination : '.swiper-pagination',
+            paginationClickable:true,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
+            onInit:function(swiper){
+                swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+            },
+            breakpoints: {
+                668: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    }
+</script>

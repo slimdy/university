@@ -3,7 +3,8 @@
 *{padding: 0px;margin: 0px;font-family: inherit;}
 html{font-size: 100%;}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, nav, section, summary{margin: 0px;padding: 0px;border: 0px none;font: inherit;vertical-align: baseline;}
-body{font-family: Roboto,Helvetica,Tahoma,Arial,sans-serif,SimSun,"宋体";font-size: 12px;color: #333;}
+body{font-family: Roboto,Helvetica,Tahoma,Arial,sans-serif,SimSun,"宋体";font-size: 12px;color: #333;
+    height: 100vh;}
 ol, ul{list-style: none outside none;}
 a{text-decoration: none;}
 li{list-style-type: none;}
@@ -30,13 +31,13 @@ table{border-collapse: collapse;}
 .underline:hover{ text-decoration:underline;}
 .licon{background: url("../Images/licon.png") no-repeat scroll center left transparent; text-indent:20px;}
 /*头部样式*/
-.headCenter{width:100%;height:185px;background-image:url(../Images/head_logo.png);background-repeat: repeat;}
+.headCenter{width:100%;height:185px;background-image:url(../Images/head_logo.png);background-repeat: round;}
 .headMenu{width:1000px;height:145px;margin:0 auto;position:relative;}
 .headMenuTelLogo{width:50px;height:50px;position:absolute;right:155px;top:50px;background-image:url(../Images/tellogo.png);background-repeat: no-repeat;}
 .headMenuTelCenter{width:150px;position:absolute;right:0px;top:50px;font-size:16px;color:#fff;}
 .headMenu02{font-weight:bold;font-size:20px;padding-top:2px;}
 .index_top_out{width: 100%;clear: both;background-color: #0391DB;height: 40px;}
-.index_top_out .index_top{width: 1000px;height: 40px;margin: 0px auto;color: #FFF;}
+.index_top_out .index_top{width: 1100px;height: 40px;margin: 0 auto;color: #FFF;}
 .index_top_out .index_top .index_nav{margin-left: 45px;}
 .index_top_out .index_top .index_nav ul li{float: left;position: relative;z-index: 1000;}
 .index_top_out .index_top .index_nav ul li a{display: block;float: left;height: 40px;line-height: 40px;margin-right: 10px;font-size: 14px;color: #FFF;width: 100px;text-align: center;}
@@ -150,7 +151,12 @@ table{border-collapse: collapse;}
 .detail_center .detail_centerbg .detail_foot p{ line-height:20px;}
 
 /*脚部样式*/
-.foot{width:100%;height:122px;/*margin-top:30px;*/background: url("../Images/foot.png") repeat scroll center transparent;}
+.foot{width:100%;height:16%;/*margin-top:30px;*/background: url("../Images/foot.png") repeat scroll center transparent;}
 .foot_main{width:1000px;height:122px;margin:0 auto;text-align:center;/*padding-top:25px;*/}
 .foot_main p{padding-top:5px;color:#fff;}
 .foot_main p a,.foot_main p span{padding:5px;color:#fff;}
+.foot_content{width: 1000px;height: 122px;padding-top: 20px;}
+
+
+/*导航*/
+.nav_w1{position: absolute;top: 40px;}
